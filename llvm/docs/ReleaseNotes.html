@@ -207,7 +207,7 @@ prints the address of the object instead of its contents.</a></li>
 Needed</a></li>
 <li><a href="http://llvm.cs.uiuc.edu/PR404">[loopsimplify] Loop simplify is
 really slow on 252.eon</a></li>
-<li><a href="Http://llvm.cs.uiuc.edu/PR122">[code-cleanup] SymbolTable class
+<li><a href="http://llvm.cs.uiuc.edu/PR122">[code-cleanup] SymbolTable class
 cleanup, Type should not derive from Value, eliminate ConstantPointerRef
 class</a>.</li>
 <li>The memory footprint of the LLVM IR has been reduced substantially.</li>
@@ -430,9 +430,7 @@ work.</li>
 such, execution of a threaded program could cause these data structures to be
 corrupted.</li>
 
-<li>It is not possible to <tt>dlopen</tt> an LLVM bytecode file in the JIT.</li>
-
-<li>Linking in static archive files (.a files) is very slow (there is no symbol
+<li>Linking in static archive files (.a files) is slow (there is no symbol
 table in the archive).</li>
 
 <li>The gccld program <a href="http://llvm.cs.uiuc.edu/PR139">does not link
