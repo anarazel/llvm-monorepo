@@ -15,7 +15,7 @@ dnl AC_OUTPUT
 dnl **************************************************************************
 dnl * Initialize
 dnl **************************************************************************
-AC_INIT([[[LLVM]]],[[[1.0]]],[llvmbugs@cs.uiuc.edu])
+AC_INIT([[[LLVM]]],[[[1.1]]],[llvmbugs@cs.uiuc.edu])
 
 dnl Place all of the extra autoconf files into the config subdirectory
 AC_CONFIG_AUX_DIR([autoconf])
@@ -37,7 +37,7 @@ for i in `ls ${srcdir}/projects`
 do
   if test ${i} != "CVS"
   then
-    if test -d ${srcdir}/projects/${i}
+    if test -f ${srcdir}/projects/${i}/configure
     then
       AC_CONFIG_SUBDIRS(projects/${i})
     fi
